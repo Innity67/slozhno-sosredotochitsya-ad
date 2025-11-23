@@ -51,18 +51,18 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 100vh;
+  min-block-size: calc(100vh - 20px);
 }
 
 @media (min-width: 768px) {
   .decorated-zone {
-    min-block-size: 96vh;
+    min-block-size: calc(100vh - 40px);
   }
 }
 
 @media (min-width: 1024px) {
   .decorated-zone {
-    min-block-size: 94.7vh;
+    min-block-size: calc(100vh - 40px);
   }
 }
 
