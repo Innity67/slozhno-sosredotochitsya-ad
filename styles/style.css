@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin: 0 auto;
+  margin: 0;
   padding: 10px;
   color: var(--text-clr);
   font-size: 18px;
@@ -11,6 +11,7 @@
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -24,6 +25,8 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
+  height: 100vh; 
+  min-height: 668px;
 }
 
 .decorative-rec-icon {
@@ -52,7 +55,7 @@
   min-block-size: 97vh;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
   .decorated-zone {
     min-block-size: 96vh;
@@ -64,7 +67,7 @@
   .decorated-zone {
     min-block-size: 94.7vh;
   }
-}
+} */
 
 .decorated-zone::before {
   content: '';
@@ -377,6 +380,8 @@
 
 .footer {
   display: grid;
+  height: 100vh; 
+  min-height: 668px;
 }
 
 .footer__text {
