@@ -2,20 +2,19 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin: 0;
+  margin: 0 auto;
   padding: 10px;
   color: var(--text-clr);
   font-size: 18px;
+  background-color: var(--background-clr); 
   background-image: var(--cover-image);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+  background-size: 100vw 100vh;
+  /* background-attachment: fixed; */
 }
 
 @media (min-width: 768px) {
-
   .page {
     padding: 20px;
   }
@@ -25,8 +24,6 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
-  height: 100vh; 
-  min-height: 668px;
 }
 
 .decorative-rec-icon {
@@ -41,7 +38,7 @@
 }
 
 .decorative-rec-icon::after {
-  content: '';
+  content: "";
   display: block;
   border-radius: 50%;
   box-shadow: 0 0 5px 4px var(--rec-decoration-clr);
@@ -55,22 +52,20 @@
   min-block-size: 97vh;
 }
 
-/* @media (min-width: 768px) {
-
+@media (min-width: 768px) {
   .decorated-zone {
     min-block-size: 96vh;
   }
 }
 
 @media (min-width: 1024px) {
-
   .decorated-zone {
     min-block-size: 94.7vh;
   }
-} */
+}
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   border-top: 1px solid var(--decorative-bracket-clr);
   border-right: 1px solid var(--decorative-bracket-clr);
@@ -81,7 +76,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   border-bottom: 1px solid var(--decorative-bracket-clr);
   border-left: 1px solid var(--decorative-bracket-clr);
@@ -102,14 +97,12 @@
 }
 
 @media (min-width: 768px) {
-
   .header__theme-menu {
     margin: 10px 0 0;
   }
 }
 
 @media (min-width: 1024px) {
-
   .header__theme-menu {
     justify-self: center;
     align-self: self-start;
@@ -158,14 +151,12 @@
 }
 
 @media (min-width: 768px) {
-
   .header__heading {
     margin: 20px 0 0 -20px;
   }
 }
 
 @media (min-width: 1024px) {
-
   .header__heading {
     margin: 45px 0 0 -20px;
   }
@@ -179,14 +170,12 @@
 }
 
 @media (min-width: 768px) {
-
   .header__text {
     margin: 0;
   }
 }
 
 @media (min-width: 1024px) {
-
   .header__text {
     margin: 0;
     padding: 0;
@@ -202,7 +191,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .accented-shadow-text {
     font-size: var(--accent-heading-fs-desktop);
   }
@@ -245,7 +233,6 @@
 }
 
 @media (min-width: 768px) {
-
   .why {
     display: grid;
     grid-template-columns: 236px 1fr;
@@ -255,7 +242,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .why {
     grid-template-columns: 314px 1fr;
   }
@@ -266,7 +252,6 @@
 }
 
 @media (min-width: 768px) {
-
   .what {
     margin: 60px 0 0;
   }
@@ -277,7 +262,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .what__heading {
     max-inline-size: 314px;
   }
@@ -294,7 +278,6 @@
 }
 
 @media (min-width: 768px) {
-
   .how {
     display: grid;
     grid-template-columns: 236px 1fr;
@@ -304,7 +287,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .how {
     grid-template-columns: 314px 1fr;
     margin: 60px 0 0;
@@ -339,7 +321,6 @@
 }
 
 @media (min-width: 768px) {
-
   .gallery {
     margin: 60px 0 74px;
   }
@@ -380,8 +361,6 @@
 
 .footer {
   display: grid;
-  height: 100vh; 
-  min-height: 668px;
 }
 
 .footer__text {
