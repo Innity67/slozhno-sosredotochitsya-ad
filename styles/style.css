@@ -6,12 +6,12 @@
   padding: 10px;
   color: var(--text-clr);
   font-size: 18px;
-  background-color: var(--background-clr); 
+  background-color: var(--background-clr);
   background-image: var(--cover-image);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100vw 100vh;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
@@ -49,18 +49,18 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
+  min-block-size: 100vh;
 }
 
 @media (min-width: 768px) {
   .decorated-zone {
-    min-block-size: 96vh;
+    min-block-size: 100vh;
   }
 }
 
 @media (min-width: 1024px) {
   .decorated-zone {
-    min-block-size: 94.7vh;
+    min-block-size: 100vh;
   }
 }
 
