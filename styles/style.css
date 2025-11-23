@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin-block: 0; 
+  margin-block: 0;
   margin-inline: auto;
   padding: 10px;
   color: var(--text-clr);
@@ -51,9 +51,9 @@
 .decorated-zone {
   position: relative;
   min-block-size: 100vh;
-  
+
   /* 2. Для браузера и визуального теста (перезаписывает значение выше) */
-  min-block-size: calc(100vh - 40px);
+  min-block-size: calc(100vh - 20px);
 }
 
 /* @media (min-width: 768px) {
