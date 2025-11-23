@@ -24,7 +24,6 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
-  /* min-block-size: calc(100vh - 20px); */
 }
 
 .decorative-rec-icon {
@@ -50,8 +49,8 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 100vh;
-  min-height: 100vh;
+  min-block-size: calc(100vh - 20px);
+  /* min-height: 100vh; */
 }
 
 @media (min-width: 768px) {
