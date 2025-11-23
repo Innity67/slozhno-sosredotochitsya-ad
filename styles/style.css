@@ -2,8 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  margin-block: 0;
-  margin-inline: auto;
+  margin: 0 auto;
   padding: 10px;
   color: var(--text-clr);
   font-size: 18px;
@@ -25,6 +24,7 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
+  min-block-size: calc(100vh - 20px);
 }
 
 .decorative-rec-icon {
@@ -51,9 +51,6 @@
 .decorated-zone {
   position: relative;
   min-block-size: 100vh;
-
-  /* 2. Для браузера и визуального теста (перезаписывает значение выше) */
-  min-block-size: calc(100vh - 20px);
 }
 
 /* @media (min-width: 768px) {
@@ -365,10 +362,19 @@
 
 .footer {
   display: grid;
+  min-block-size: calc(100vh - 20px);
 }
 
 .footer__text {
   justify-self: center;
   align-self: center;
   text-shadow: 2px 2px 0 var(--accent-clr);
+}
+
+@media (min-width: 768px) {
+  /* Переопределяем высоту для хедера и футера на больших экранах */
+  .header, 
+  .footer {
+    min-block-size: calc(100vh - 40px);
+  }
 }
