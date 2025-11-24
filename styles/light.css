@@ -2,34 +2,19 @@
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
-*/
-
+  /*  */
 :root.theme-light {
-  --cover-image: url(../images/cover-image-light.png);
-  --accent-clr: #ff8dcb;
-  --background-clr: #fff1f7;
-  --accent-clr-with-background: #353430;
-  --accent-heading-clr: #ffc2e6;
-  --text-clr: #353430;
-  --button-hover-clr: #32312d66;
-  --decorative-bracket-clr: #353430;
-  --menu-clr: #353430;
-  --rec-decoration-clr: transparent;
-  --heading-clr: #353430;
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --menu-color: #353430;
+  --text-color: #353430;
+  --heading-color: #ffc2e6;
+  --title-decor-color: #353430;
+  --title-color: #353430;
+  --hover-border-color: rgba(50, 49, 45, 0.4);
+  --display-bulb: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --cover-image: url(../images/cover-image-light.png);
-    --accent-clr: #ff8dcb;
-    --background-clr: #fff1f7;
-    --accent-clr-with-background: #353430;
-    --accent-heading-clr: #ffc2e6;
-    --text-clr: #353430;
-    --button-hover-clr: #32312d66;
-    --decorative-bracket-clr: #353430;
-    --menu-clr: #353430;
-    --rec-decoration-clr: transparent;
-    --heading-clr: #353430;
-  }
+.theme-light .page {
+  background-image: url(../images/cover-image-light.png);
 }
